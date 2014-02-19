@@ -41,26 +41,22 @@ Requirements 文件
 
 实践中，Requirements文件通常有4种作用:
 
-1. Requirements files are used to hold the result from :ref:`pip freeze` for the
-   purpose of achieving :ref:`repeatable installations <Repeatability>`.  In
-   this case, your requirement file contains a pinned version of everything that
-   was installed when `pip freeze` was run.
+1. :ref:`pip freeze` 输出的信息保存在Requirements文件中，
+   主要用于 :ref:`repeatable installations <Repeatability>`.  In
+   在这种情况下，requirement文件会包含你运行 `pip freeze` 命令时各个package的版本信息.
 
    ::
 
      pip freeze > requirements.txt
      pip install -r requirements.txt
 
-2. Requirements files are used to force pip to properly resolve dependencies.
-   As it is now, pip `doesn't have true dependency resolution
-   <https://github.com/pypa/pip/issues/988>`_, but instead simply uses the first
-   specification it finds for a project. E.g if `pkg1` requires `pkg3>=1.0` and
-   `pkg2` requires `pkg3>=1.0,<=2.0`, and if `pkg1` is resolved first, pip will
-   only use `pkg3>=1.0`, and could easily end up installing a version of `pkg3`
-   that conflicts with the needs of `pkg2`.  To solve this problem, you can
-   place `pkg3>=1.0,<=2.0` (i.e. the correct specification) into your
-   requirements file directly along with the other top level requirements. Like
-   so:
+2. 引导pip正确地安装满足需求的package.
+   由于现在pip `还不具备真正的依赖分析 <https://github.com/pypa/pip/issues/988>`_, 
+   只是简单地为项目匹配第一需求. 举个例子：假如 `pkg1` 需要 `pkg3>=1.0`,
+   `pkg2` 需要 `pkg3>=1.0,<=2.0`, 如果 `pkg1` 被先安装, 那么pip只会满足 
+   `pkg3>=1.0`, 这样可能会导致所安装的 `pkg3` 版本和 `pkg2` 发生冲突. 
+   如果要解决这个问题，需要把 `pkg3>=1.0,<=2.0` (正确的指定) 写入
+   requirements 文件. 例如:
 
    ::
 
