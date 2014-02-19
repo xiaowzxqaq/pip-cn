@@ -11,3 +11,6 @@ build/*
 *.~
 .tox
 
+*.sublime-project
+*.sublime-workspace
+
