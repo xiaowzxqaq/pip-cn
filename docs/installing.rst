@@ -17,7 +17,7 @@ pip可以在Unix/Linux, OS X 和 Windows系统中运行.
 
 .. _`get-pip`:
 
-安装和升级pip
+使用脚本安装和升级pip
 ----------------------
 
 要安装或升级pip，需要下载 `get-pip.py
@@ -33,10 +33,10 @@ pip可以在Unix/Linux, OS X 和 Windows系统中运行.
 如果需要升级 `setuptools`_ (或 `distribute`_), 运行 ``pip install -U setuptools`` [3]_
 
 
-使用包管理系统安装
+使用软件管理器安装
 ----------------------
 
-在Linux系统中，pip通常可以在系统的包管理器中安装，不过通过此方法安装的
+在Linux系统中，pip通常可以在系统的软件管理器中安装，不过通过此方法安装的
 一般不会是最新版本的pip.
 
 Debian 和 Ubuntu::
@@ -52,8 +52,7 @@ Fedora::
        tool like `curl` that verifies SSL certificates when downloading from
        https URLs.
 
-.. [2] Beginning with pip v1.5.1, ``get-pip.py`` stopped requiring setuptools to
-       be installed first.
+.. [2] 从 pip v1.5.1开始, 使用 ``get-pip.py`` 安装pip不一定需要先安装setuptools.
 
 .. [3] Although using ``pip install --upgrade setuptools`` to upgrade from
        distribute to setuptools works in isolation, it's possible to get

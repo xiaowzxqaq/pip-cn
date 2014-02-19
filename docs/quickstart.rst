@@ -11,7 +11,7 @@
     [...]
     Successfully installed SomePackage
 
-查看什么包被安装:
+查看什么package被安装:
 
 ::
 
@@ -23,14 +23,14 @@
      ../somepackage/__init__.py
      [...]
 
-查看什么包有更新:
+查看什么package有更新:
 
 ::
 
   $ pip list --outdated
     SomePackage (Current: 1.0 Latest: 2.0)
 
-更新新的模块包:
+更新新的package:
 
 ::
 
@@ -42,7 +42,7 @@
     Running setup.py install for SomePackage
     Successfully installed SomePackage
 
-卸载已有包:
+卸载已有package:
 
 ::
 

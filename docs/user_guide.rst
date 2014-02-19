@@ -1,48 +1,45 @@
 ==========
-User Guide
+用户手册
 ==========
 
 .. contents::
 
-Installing Packages
+安装package
 *******************
 
-pip supports installing from `PyPI`_, version control, local projects, and
-directly from distribution files.
+pip支持从 `PyPI`_ 、版本控制系统、本地项目, 甚至直接通过distribution文件安装package.
 
 
-The most common scenario is to install from `PyPI`_ using :ref:`Requirement
-Specifiers`
+最常见的是使用 :ref:`Requirement Specifiers` 从 `PyPI`_ 安装。
 
   ::
 
-  $ pip install SomePackage            # latest version
-  $ pip install SomePackage==1.0.4     # specific version
-  $ pip install 'SomePackage>=1.0.4'     # minimum version
+  $ pip install SomePackage            # 最新版本
+  $ pip install SomePackage==1.0.4     # 指定版本
+  $ pip install 'SomePackage>=1.0.4'     # 最低版本
 
 
-For more information and examples, see the :ref:`pip install` reference.
+更多详情可以参考 :ref:`pip install` 一节.
 
 
 .. _`Requirements Files`:
 
-Requirements Files
+Requirements 文件
 ******************
 
-"Requirements files" are files containing a list of items to be
-installed using :ref:`pip install` like so:
+"Requirements 文件"中列出了需要安装的package，并可以通过 :ref:`pip install` 
+来安装:
 
  ::
 
    pip install -r requirements.txt
 
 
-Details on the format of the files are here: :ref:`Requirements File Format`.
+这个文件的格式详情可以参考: :ref:`Requirements File Format`.
 
-Logically, a Requirements file is just a list of :ref:`pip install` arguments
-placed in a file.
+理论上来说，Requirements只是一个包含了由 :ref:`pip install` 参数排成列表的文件.
 
-In practice, there are 4 common uses of Requirements files:
+实践中，Requirements文件通常有4种作用:
 
 1. Requirements files are used to hold the result from :ref:`pip freeze` for the
    purpose of achieving :ref:`repeatable installations <Repeatability>`.  In
