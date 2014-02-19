@@ -33,18 +33,17 @@ pip可以在Unix/Linux, OS X 和 Windows系统中运行.
 如果需要升级 `setuptools`_ (或 `distribute`_), 运行 ``pip install -U setuptools`` [3]_
 
 
-使用包管理器
+使用包管理系统安装
 ----------------------
 
-On Linux, pip will generally be available for the system install of python using
-the system package manager, although often the latest version will be
-unavailable.
+在Linux系统中，pip通常可以在系统的包管理器中安装，不过通过此方法安装的
+一般不会是最新版本的pip.
 
-On Debian and Ubuntu::
+Debian 和 Ubuntu::
 
    $ sudo apt-get install python-pip
 
-On Fedora::
+Fedora::
 
    $ sudo yum install python-pip
 
