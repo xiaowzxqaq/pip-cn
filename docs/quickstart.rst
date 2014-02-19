@@ -1,9 +1,9 @@
 Quickstart
 ==========
 
-First, :doc:`Install pip <installing>`.
+首先, :doc:`安装pip <installing>`.
 
-Install a package from `PyPI`_:
+从 `PyPI`_ 安装:
 
 ::
 
