@@ -1,4 +1,4 @@
-Quickstart
+快速指南
 ==========
 
 首先, :doc:`安装pip <installing>`.
@@ -11,7 +11,7 @@ Quickstart
     [...]
     Successfully installed SomePackage
 
-Show what files were installed:
+查看什么包被安装:
 
 ::
 
@@ -23,14 +23,14 @@ Show what files were installed:
      ../somepackage/__init__.py
      [...]
 
-List what packages are outdated:
+查看什么包有更新:
 
 ::
 
   $ pip list --outdated
     SomePackage (Current: 1.0 Latest: 2.0)
 
-Upgrade a package:
+更新新的模块包:
 
 ::
 
@@ -42,7 +42,7 @@ Upgrade a package:
     Running setup.py install for SomePackage
     Successfully installed SomePackage
 
-Uninstall a package:
+卸载已有包:
 
 ::
 

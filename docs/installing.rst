@@ -1,39 +1,39 @@
 .. _`Installation`:
 
-Installation
+安装pip
 ============
 
-Python & OS Support
+Python和系统版本支持列表
 -------------------
 
-pip works with CPython versions 2.6, 2.7, 3.1, 3.2, 3.3, 3.4 and also pypy.
+pip可以在以下版本的CPython下运行：2.6, 2.7, 3.1, 3.2, 3.3, 3.4 和 pypy.
 
-pip works on Unix/Linux, OS X, and Windows.
+pip可以在Unix/Linux, OS X 和 Windows系统中运行.
 
 .. note::
 
-  Python 2.5 was supported through v1.3.1, and Python 2.4 was supported through v1.1.
+  Python 2.5在 v1.3.1版本后支持, Python 2.4在v1.1版本后支持.
 
 
 .. _`get-pip`:
 
-Install or Upgrade pip
+安装和升级pip
 ----------------------
 
-To install or upgrade pip, securely download `get-pip.py
+要安装或升级pip，需要下载 `get-pip.py
 <https://raw.github.com/pypa/pip/master/contrib/get-pip.py>`_. [1]_
 
-Then run the following (which may require administrator access)::
+然后运行以下命令 (需要管理员权限)::
 
  $ python get-pip.py
 
-If `setuptools`_ (or `distribute`_) is not already installed, ``get-pip.py`` will
-install `setuptools`_ for you. [2]_
+如果 `setuptools`_ (或 `distribute`_) 未安装, ``get-pip.py`` 会
+自动为你安装 `setuptools`_ . [2]_
 
-To upgrade an existing `setuptools`_ (or `distribute`_), run ``pip install -U setuptools`` [3]_
+如果需要升级 `setuptools`_ (或 `distribute`_), 运行 ``pip install -U setuptools`` [3]_
 
 
-Using Package Managers
+使用包管理器
 ----------------------
 
 On Linux, pip will generally be available for the system install of python using
